@@ -27,6 +27,8 @@ At the heart of the project sits the ESP32 microcontroller. Initially, I tried w
 
 The ESP32 runs Arduino Core. 
 
+![alt text](https://github.com/sathyanc/Tinker-Slider-v1.0/blob/master/Schematic/esp32.png)
+
 I used a 2 phase NEMA17 Hybrid motor that has a holding torque of 4000. The motor needs 1.7A per phase. It has a resolution of 1.8 degrees per step.  So to complete a single revolution, we need to step the motor 200 times. However, we need the resolution as low as 1 degree per step to be able to capture the super smooth moving time-lapse videos. 
 
 The ESP32 Controls the stepper motor through the A4988 Stepper motor driver chip. This driver chip supports up to 1/16th  Microstepping mode which enables us to achieve rotational accuracy up to 0.0625degrees per step.
@@ -45,7 +47,8 @@ Adafruit SSD1306 - https://github.com/adafruit/Adafruit_SSD1306
 References:
 https://github.com/Wogified/Arduino-Motorized-Camera-Slider
 
-To - Do :
-WiFi Control by App / Custom Remote 
-3 Axis Conversion 
+To-Do:
+WiFi Control by App / Custom Remote,
+3 Axis Conversion,
 CNC Milled Design 
+
