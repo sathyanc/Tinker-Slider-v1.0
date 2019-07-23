@@ -28,11 +28,13 @@ AccelStepper stepper(1, STEP, DIR);
 #define BAUD_RATE (9600)
 
 //Display
+#define SCREEN_WIDTH 128 // OLED display width
+#define SCREEN_HEIGHT 32 // OLED display height, use 64 or 32
 #define OLED_RESET LED_BUILTIN 
 #define LOGO16_GLCD_HEIGHT 16 
 #define LOGO16_GLCD_WIDTH  16 
 
-Adafruit_SSD1306 display(OLED_RESET);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 //Encoder
 #define encButton 25 
